@@ -1,0 +1,62 @@
+:root{
+  font-size: 16px;
+}
+html, body{
+  /* height: 100%; */
+  margin: 0 0 0 0;
+}
+.flex-the-body{
+  margin: 5rem auto 0rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+
+}
+
+.encrypt-container{
+  margin-top: 5rem;
+  background-color: #ddd;
+  width: 75%;
+  height: 15rem;
+}
+.decrypt-container{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #ddd;
+  width: 75%;
+  height: 15rem;
+}
+
+#put-message{
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+#message-field, #hide-option{
+  display: inline-block;
+}
+
+#hide-option{
+  cursor: pointer;
+  width: 7rem;
+}
+
+#encrypted-info, #decrypted-info{
+  margin: 1rem 0rem;
+}
+
+#submit-button, #decrypt-button{
+  margin: 1rem 0 0 0.5rem;;
+  padding: 0.3rem;
+  width: 10rem;
+}
+
+
+
+
+
+
+
+
+/*    EOF    */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Master Encryption</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <div class="flex-the-body">
+
+
+    <div class="encrypt-container">
+      <p id="put-message">Put your message here:</p>
+      <input id="message-field" type="text" name="" value="" placeholder="Your message HERE">
+      <button id="hide-option" onclick="switchType()">I want it hidden!</button>
+      <br>
+      <button id="submit-button" type="button" name="button" onclick="encryptor()">ENCRYPT!</button>
+
+      <p id="encrypted-info">This is the encrypted version:</p>
+      <p id="encrypted">19 5 3 18 5 20 27 13 5 19 19 1 7 5</p>
+    </div>
+
+
+    <div class="decrypt-container">
+      <p id="put-message">Put your message here:</p>
+      <input id="decrypt-field" type="text" name="" value="" placeholder="Your message HERE">
+      <br>
+      <button id="decrypt-button" type="button" name="button" onclick="decryptor()">DECRYPT!</button>
+
+      <p id="decrypted-info">This is the decrypted version:</p>
+      <p id="decrypted">secret message</p>
+
+    </div>
+
+  </div> <!-- end of flex-the-body -->
+  </body>
+  <script type="text/javascript" src="main.js">
+
+  </script>
+</html>

@@ -16,7 +16,6 @@ function switchType() {
 var radioPosition = 0;
 $(".encrypt-container-right input[name=algo]").click(function(){
   radioPosition = ($("input[name='algo']:checked").val());
-  console.log(radioPosition);
   if (radioPosition == 2) {
     $(".cipher-dropdown").css({"display": "table-row"})
   }else {
@@ -46,7 +45,7 @@ function encryptor(){ // first info from field and into lowercase symbols
     document.getElementById('encrypted').innerHTML = cryptedMessage;
   }else if (radioPosition == 2){
     let cryptedMessage = caesarCipher(letterArray);
-    document.getElementById('encrypted').innerHTML = cryptedMessage;
+    document.getElementById('encrypted').innerHTML = cryptedMessage+" - Unfortunately this is not complete yet.";
   }else if (radioPosition == 3){
     let cryptedMessage = kurwaTor(letterArray);
     document.getElementById('encrypted').innerHTML = cryptedMessage;

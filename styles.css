@@ -1,18 +1,20 @@
-:root{
-  font-size: 16px;
-}
+:root{font-size: 16px;}
 html, body{
   /* height: 100%; */
-  margin: 0 0 0 0;
+  margin: 0 0 0 0;}
+*:focus{
+  outline-color: #917AEF;
 }
+
+
 .flex-the-body{
   margin: 5rem auto 0rem auto;
   width: 50%;
+  min-width: 35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #eee;
-
 }
 
 .encrypt-container{
@@ -21,12 +23,35 @@ html, body{
   width: 75%;
   height: 15rem;
 }
+.encrypt-container-left{
+  background-color: #bbb;
+  float: left;
+  width: 50%;
+}
+.encrypt-container-right{
+  width: 50%;
+  /* padding-left: 3em; */
+  /* text-align: justify; */
+  background-color: #ccc;
+  float: left;
+}
+
 .decrypt-container{
   margin-top: 5rem;
   margin-bottom: 5rem;
   background-color: #ddd;
   width: 75%;
   height: 15rem;
+}
+
+
+.cipher-dropdown{
+  display: none;
+}
+td {
+  display: inline-block;
+  width: 6rem;
+  /* border: 1px solid #000; */
 }
 
 #put-message{
@@ -39,7 +64,13 @@ html, body{
 
 #hide-option{
   cursor: pointer;
-  width: 7rem;
+  /* font-size: 1em; */
+  font-weight: bold;
+  width: 2rem;
+  background-color: #E5FFE8;
+  border-style: solid;
+  border-color: #aaa;
+  border-radius: 0.3em;
 }
 
 #encrypted-info, #decrypted-info{

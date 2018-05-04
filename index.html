@@ -5,20 +5,72 @@
     <title>Master Encryption</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="../../jquery/jquery-3.3.1.min.js"></script>
   </head>
   <body>
   <div class="flex-the-body">
 
-
     <div class="encrypt-container">
-      <p id="put-message">Put your message here:</p>
-      <input id="message-field" type="text" name="" value="" placeholder="Your message HERE">
-      <button id="hide-option" onclick="switchType()">I want it hidden!</button>
-      <br>
-      <button id="submit-button" type="button" name="button" onclick="encryptor()">ENCRYPT!</button>
+      <div class="encrypt-container-left">
+        <p id="put-message">Put your message here:</p>
+        <input id="message-field" type="text" name="" value="" placeholder="Your message HERE">
+        <button id="hide-option" onclick="switchType()">*</button>
+        <br>
+        <button id="submit-button" type="button" name="button" onclick="encryptor()">ENCRYPT!</button>
 
-      <p id="encrypted-info">This is the encrypted version:</p>
-      <p id="encrypted">19 5 3 18 5 20 27 13 5 19 19 1 7 5</p>
+        <p id="encrypted-info">This is the encrypted version:</p>
+        <p id="encrypted">19 05 03 18 05 20 27 13 05 19 19 01 07 05</p>
+      </div>
+      <table class="encrypt-container-right">
+        <tr>
+          <td><input type="radio" name="algo" value="1"></td>
+          <td>Babby's First</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="algo" value="2"></td>
+          <td>Caesar Cipher</td>
+        </tr>
+        <tr class="cipher-dropdown" name="">
+          <td> <!-- This is the cipher key, long -->
+            <select class="" name="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+            <option value="3">7</option>
+            <option value="3">8</option>
+            <option value="3">9</option>
+            <option value="3">10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+            <option value=24>24</option>
+            <option value=25>25</option>
+            <option value=26>26</option>
+            <option value=27>27</option>
+            </select>
+          </td>
+          <td>Cipher Key</td>
+
+        </tr>
+        <tr>
+          <td><input type="radio" name="algo" value="3"></td>
+          <td>Algorithm 3</td>
+        </tr>
+
+      </table>
     </div>
 
 

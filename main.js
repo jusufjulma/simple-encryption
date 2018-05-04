@@ -50,7 +50,8 @@ function encryptor(){ // first info from field and into lowercase symbols
     let cryptedMessage = kurwaTor(letterArray);
     document.getElementById('encrypted').innerHTML = cryptedMessage;
   }else{
-    alert("Kamoon hei.")} // end of method choice
+    document.getElementById('encrypted').innerHTML = "You should\
+    pick the encryption algorithm from the list first.";} // end of method choice
 
 } // end of encryptor
 

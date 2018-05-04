@@ -1,56 +1,92 @@
-:root{font-size: 16px;}
+:root{font-size: 20px;}
 html, body{
   /* height: 100%; */
   margin: 0 0 0 0;}
 *:focus{
-  outline-color: #917AEF;
+  outline-color: rgba(0, 255, 0, 1);
+}
+::selection {
+  background: rgba(0, 255, 0, 0.4);
+}
+body{
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url(symbolbg.png);
+    background-repeat: 0 0;
+    animation: slide 60s linear infinite;
+}
+@keyframes slide {
+  from { background-position: 0 0; }
+   to { background-position: 0px 1080px; }
+}
+/*FONT SECTION ASDASDASD*/
+input, button, body{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  letter-spacing: 0.05em;
+}
+input{
+  color: #000;
+}
+input:focus{
+  outline: none;
+}
+input[type="text"], input[type="password"]{
+  width: 15em;
 }
 
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
 
 .flex-the-body{
-  margin: 5rem auto 0rem auto;
+  margin: 1rem auto 0rem auto;
   width: 50%;
   min-width: 35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eee;
+  background-color: rgba(0,0,0,0.8);
 }
 
 .encrypt-container{
   margin-top: 5rem;
-  background-color: #ddd;
+  /* background-color: rgba(255,255,255,0.3); */
   width: 75%;
   height: 15rem;
 }
 .encrypt-container-left{
-  background-color: #bbb;
+  /* background-color: rgba(180,180,180,0.8); */
   float: left;
   width: 50%;
+  height: 100%;
 }
 .encrypt-container-right{
   width: 50%;
   /* padding-left: 3em; */
   /* text-align: justify; */
-  background-color: #ccc;
+  /* background-color: #ccc; */
   float: left;
 }
 
 .decrypt-container{
   margin-top: 5rem;
   margin-bottom: 5rem;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   width: 75%;
   height: 15rem;
 }
-
 
 .cipher-dropdown{
   display: none;
 }
 td {
   display: inline-block;
-  width: 6rem;
+  width: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
   /* border: 1px solid #000; */
 }
 
@@ -64,13 +100,17 @@ td {
 
 #hide-option{
   cursor: pointer;
-  /* font-size: 1em; */
+  color: #000;
   font-weight: bold;
   width: 2rem;
-  background-color: #E5FFE8;
+  /* background-color: #E5FFE8; */
   border-style: solid;
   border-color: #aaa;
   border-radius: 0.3em;
+}
+#encrypted{
+  height: 50%;
+  overflow: auto;
 }
 
 #encrypted-info, #decrypted-info{
@@ -81,9 +121,15 @@ td {
   margin: 1rem 0 0 0.5rem;;
   padding: 0.3rem;
   width: 10rem;
+  background-color: rgba(50, 50, 50, 1);
 }
 
-
+.algo-information{
+  float: right;
+  padding: 0em 0.5em 0.5em 0.5em ;
+  font-size: 1.5rem;
+  flex-wrap: nowrap;
+}
 
 
 
